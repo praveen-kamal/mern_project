@@ -9,7 +9,7 @@ import About from "./components/about/About";
 import ContactPage from "./components/contact/ContactPage";
 import Header from "./components/HeaderComponents/Header";
 import AdminDashboard from "./components/admin/AdminDashboard";
-import AdminLogin from "./components/admin/AdminLogin";
+// import AdminLogin from "./components/admin/AdminLogin";
 import { ToastContainer } from "react-toastify";
 
 function App() {

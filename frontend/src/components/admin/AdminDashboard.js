@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useCookies } from "react-cookie";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./AdminDashboard.css";
+// import { useCookies } from "react-cookie";
 
 const AdminDashboard = () => {
     const [queries, setQueries] = useState([]);
@@ -33,7 +33,7 @@ const AdminDashboard = () => {
             console.log(response.data);
         } catch (err) {
             navigate("/admin/login");
-            toast.error("An error occurred. Please sign in again.", {
+            toast.error("An error occurred. Please try refreshing the page.", {
                 position: "bottom-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -73,7 +73,7 @@ const AdminDashboard = () => {
             }
         } catch (err) {
             console.log(err);
-            toast.error("An error occurred. Please sign in again.", {
+            toast.error("An error occurred. Please try refreshing the page.", {
                 position: "bottom-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -94,9 +94,7 @@ const AdminDashboard = () => {
         <div className="admin-dashboard">
             <div className="spacer layer-1">
                 <h1 className="p-4">
-                    <Link to="/admin/login">
-                        CoED./Admin - Your Dashboard
-                    </Link>
+                    CoED./Admin - Your Dashboard
                 </h1>
             </div>
             <div className="content p-0 m-0">
