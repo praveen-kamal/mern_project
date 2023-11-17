@@ -10,7 +10,7 @@ import ContactPage from "./components/contact/ContactPage";
 import Header from "./components/HeaderComponents/Header";
 import AdminDashboard from "./components/admin/AdminDashboard";
 // import AdminLogin from "./components/admin/AdminLogin";
-import { ToastContainer } from "react-toastify";
+// import { ToastContainer } from "react-toastify";
 
 function App() {
     return (
@@ -28,7 +28,6 @@ function App() {
                 >
                 </Route>
             </Routes>
-            <ToastContainer limit={1} />
         </BrowserRouter>
     );
 }

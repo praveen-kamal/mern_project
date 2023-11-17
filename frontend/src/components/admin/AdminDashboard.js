@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -129,6 +129,7 @@ const AdminDashboard = () => {
                 </div>
             </div>
             <div className="spacer layer-2"></div>
+            <ToastContainer limit={1} />
         </div>
     );
 };

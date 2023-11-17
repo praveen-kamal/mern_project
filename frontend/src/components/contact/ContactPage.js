@@ -2,7 +2,7 @@ import "./ContactPage.css";
 import React, { useState } from "react";
 import Header from "../HeaderComponents/Header";
 import axios from "axios";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 const ContactPage = () => {
     const [email, setEmail] = useState("");
@@ -131,6 +131,7 @@ const ContactPage = () => {
                     </form>
                 </div>
             </div>
+            <ToastContainer limit={1} />
         </div>
     );
 };
