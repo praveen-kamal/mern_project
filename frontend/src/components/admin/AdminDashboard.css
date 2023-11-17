@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.admin-dashboard {
+    font-family: "Poppins";
+    width: 100vw;
+    background: #f8f8f8;
+    min-height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.admin-dashboard .content {
+    min-height: 100vh;
+    animation: fade-in 2s ease;
+}
+
+.admin-dashboard .content h1 {
+    border-bottom: 1px solid #000;
+}
+
+.admin-dashboard .spacer h1 {
+    animation: fade-in 2s ease;
+}
+
+.admin-dashboard .query {
+    min-width: 100vw;
+}
+
+.admin-dashboard .card {
+    background: #f8f8f8;
+    box-shadow:
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.admin-dashboard .card p {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.admin-dashboard .spacer {
+    aspect-ratio: 960/100;
+    background-repeat: no-repeat;
+    text-align: start;
+}
+
+.admin-dashboard .layer-1 {
+    background-image: url("./layered-waves-haikei-top.svg");
+    background-size: cover;
+    background-position: top;
+}
+
+.admin-dashboard .layer-2 {
+    background-image: url("./layered-waves-haikei-bottom.svg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateX(-5%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

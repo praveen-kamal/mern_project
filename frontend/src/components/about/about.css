@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.about {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.about-content {
+    font-family: "Poppins";
+    text-align: justify;
+    color: black;
+    margin: 2vh 2vw;
+    margin-bottom: 0px;
+}
+
+.about-header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    animation: fade-in 2s ease;
+}
+
+.about-text p {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 25px 0px;
+    animation: fade-in 2s ease;
+}
+
+.call-to-action {
+    text-align: center;
+    margin: auto;
+    margin-top: -20px;
+    animation: fade-in 2s ease;
+}
+
+.call-to-action p {
+    display: inline;
+    margin: 0px 10px;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.call-to-action a {
+    transition: all ease 0.5s;
+    color: #54b0a5;
+}
+
+.call-to-action button {
+    transition: all ease 0.5s;
+}
+
+.call-to-action button:hover a {
+    color: #f8f8f8;
+}
+
+.call-to-action button:hover {
+    background: #54b0a5;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layer-1 {
+    background-image: url("./layered-waves-haikei-top.svg");
+    background-position: center;
+}
+
+.about .layer-2 {
+    background-image: url("./layered-waves-haikei-bottom.svg");
+    background-position: center;
+}
+
+.explore {
+    background: none;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateX(-5%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
