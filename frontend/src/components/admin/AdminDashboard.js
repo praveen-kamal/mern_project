@@ -32,7 +32,7 @@ const AdminDashboard = () => {
             setQueries(response.data);
             console.log(response.data);
         } catch (err) {
-            navigate("/admin/login");
+            // navigate("/admin/login");
             toast.error("An error occurred. Please try refreshing the page.", {
                 position: "bottom-right",
                 autoClose: 5000,
@@ -52,9 +52,9 @@ const AdminDashboard = () => {
         try {
             const response = await axios.delete(
                 `https://coed-queries.onrender.com/api/queries/${queryId}`,
-                {
-                    withCredentials: true,
-                },
+                // {
+                //     withCredentials: true,
+                // },
             );
 
             if (response.data.success) {
