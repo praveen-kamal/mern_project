@@ -27,9 +27,6 @@ const ContactPage = () => {
                     email: email,
                     message: query,
                 },
-                {
-                    withCredentials: true,
-                },
             );
 
             if (response.data.success) {
