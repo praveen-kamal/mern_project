@@ -24,9 +24,9 @@ const AdminDashboard = () => {
         try {
             const response = await axios.get(
                 "https://coed-queries.onrender.com/api/queries",
-                {
-                    withCredentials: true,
-                },
+                // {
+                //     withCredentials: true,
+                // },
             );
 
             setQueries(response.data);
